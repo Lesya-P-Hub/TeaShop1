@@ -1,0 +1,89 @@
+﻿<Window x:Class="TeaShop.View.Window.RegisterWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TeaShop.View.Window"
+        mc:Ignorable="d"
+        Title="Регистрация" Height="600" Width="900"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Image Source="\Resources\Another\wallteaBlur.jpg"
+               Stretch="Fill"
+               Grid.RowSpan="9"/>
+        <Image Source="/Resources/Another/regist.png" />
+        <Image Source="/Resources/Another/registWhite.png" Margin="0,0,16,0" />
+        <StackPanel Grid.Row="2"
+                    Orientation="Vertical">
+            <TextBlock Text="Имя"
+                       Height="20"
+                       Width="400"
+                       Foreground="White"/>
+            <TextBox Name="NameTb"
+                     Height="40"
+                     Width="400"/>
+        </StackPanel>
+        <StackPanel Grid.Row="3"
+                    Orientation="Vertical">
+            <TextBlock Text="Фамилия"
+                       Height="20"
+                       Width="400"
+                       Foreground="White"/>
+            <TextBox Name="SurnameTb"
+                     Height="40"
+                     Width="400"/>
+        </StackPanel>
+        <StackPanel Grid.Row="4"
+                    Orientation="Vertical">
+            <TextBlock Text="Отчество"
+                       Height="20"
+                       Width="400"
+                       Foreground="White"/>
+            <TextBox Name="PatronimycTb"
+                     Height="40"
+                     Width="400"/>
+        </StackPanel>
+        <StackPanel Grid.Row="5"
+                    Orientation="Vertical">
+            <TextBlock Text="Телефон (логин)"
+                       Height="20"
+                       Width="400"
+                       Foreground="White"/>
+            <TextBox Name="PhoneTb"
+                     Height="40"
+                     Width="400"/>
+        </StackPanel>
+        <StackPanel Grid.Row="6"
+                    Orientation="Vertical">
+            <TextBlock Text="Пароль"
+                       Height="20"
+                       Width="400"
+                       Foreground="White"/>
+            <PasswordBox Name="PasswordPb"
+                     Height="40"
+                     Width="400"/>
+        </StackPanel>
+        <Button Name="RegistBtn"
+                    Content="Зарегистрироваться"
+                     Height="40"
+                     Width="200"
+                     Grid.Row="8"/>
+        <TextBlock Text="Согласие на обработку данных"
+                   Foreground="White"
+                   Grid.Row="8"/>
+        <CheckBox Name="ChekCb"
+                  Grid.Row="8" Margin="271,24,-271,-24"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+    </Grid>
+</Window>

@@ -1,0 +1,48 @@
+﻿<Page x:Class="TeaShop.View.Pages.MenuPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:TeaShop.View.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="93" d:DesignWidth="900"
+      Title="MenuPage"
+      Background="#72A75B">
+
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <Image Source="/Resources/Icons/mainIco.png"
+                   Stretch="Fill"
+                   Height="72"
+                   Width="78"/>
+            <TextBlock Text="Главная" HorizontalAlignment="Center"/>
+        </StackPanel>
+        <StackPanel Orientation="Vertical"
+                    Grid.Column="1">
+            <Image Source="/Resources/Icons/searchIco.png"
+                   Height="73"
+                   Width="230"
+                   RenderTransformOrigin="0.546,1.369"/>
+            <TextBlock Text="Поиск" HorizontalAlignment="Center"/>
+        </StackPanel>
+        <StackPanel Orientation="Vertical"
+                    Grid.Column="2">
+            <Image Source="/Resources/Icons/korzinaIco.png"
+                  Height="71"/>
+            <TextBlock Text="Корзина" HorizontalAlignment="Center"/>
+        </StackPanel>
+        <StackPanel Orientation="Vertical"
+                    Grid.Column="3">
+            <Image Source="/Resources/Icons/profileIco.png"
+                   Height="73"
+                   Width="226"/>
+            <TextBlock Text="Профиль" HorizontalAlignment="Center"/>
+        </StackPanel>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+    </Grid>
+</Page>
