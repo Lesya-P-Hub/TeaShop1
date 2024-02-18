@@ -22,12 +22,9 @@ namespace TeaShop.View.Windows
         public EnterWindow()
         {
             InitializeComponent();
-            Loaded += EnterWindow_Loaded;
+            
         }
 
-        private void EnterWindow_Loaded(object sender, RoutedEventArgs e)
-        {
-            this.Activate();
-        }
+       
     }
 }
