@@ -23,6 +23,10 @@ namespace TeaShop.View.Pages
         public MenuPage()
         {
             InitializeComponent();
+            //BodyFrm.Navigate(new View.Pages.MainBodyPage());
+            //BodyFrm.Navigate(new View.Pages.SearchPage());
+            //BodyFrm.Navigate(new View.Pages.KorzinaPage());
+            //BodyFrm.Navigate(new View.Pages.ProfilePage());
         }
     }
 }

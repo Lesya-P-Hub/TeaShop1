@@ -11,31 +11,39 @@
 
     <Grid>
         <StackPanel Orientation="Vertical">
-            <Image Source="/Resources/Icons/mainIco.png"
+			<Button Name="MainBtn">
+				<Image Source="/Resources/Icons/mainIco.png"
                    Stretch="Fill"
                    Height="72"
                    Width="78"/>
+			</Button>
             <TextBlock Text="Главная" HorizontalAlignment="Center"/>
         </StackPanel>
         <StackPanel Orientation="Vertical"
                     Grid.Column="1">
-            <Image Source="/Resources/Icons/searchIco.png"
+			<Button Name="SearchBtn">
+				<Image Source="/Resources/Icons/searchIco.png"
                    Height="73"
                    Width="230"
                    RenderTransformOrigin="0.546,1.369"/>
+			</Button>
             <TextBlock Text="Поиск" HorizontalAlignment="Center"/>
         </StackPanel>
         <StackPanel Orientation="Vertical"
                     Grid.Column="2">
-            <Image Source="/Resources/Icons/korzinaIco.png"
+			<Button Name="KorzinaBtn">
+				<Image Source="/Resources/Icons/korzinaIco.png"
                   Height="71"/>
+			</Button>
             <TextBlock Text="Корзина" HorizontalAlignment="Center"/>
         </StackPanel>
         <StackPanel Orientation="Vertical"
                     Grid.Column="3">
-            <Image Source="/Resources/Icons/profileIco.png"
+			<Button Name="ProfileBtn">
+				<Image Source="/Resources/Icons/profileIco.png"
                    Height="73"
                    Width="226"/>
+			</Button>
             <TextBlock Text="Профиль" HorizontalAlignment="Center"/>
         </StackPanel>
         <Grid.ColumnDefinitions>

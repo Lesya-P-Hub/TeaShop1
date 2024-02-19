@@ -22,7 +22,30 @@ namespace TeaShop.View.Windows
         public EnterWindow()
         {
             InitializeComponent();
-            
+            //string mes ="";
+            //if(string.IsNullOrEmpty(PnoheTb.Text))
+            //{
+               // mes =+"Введите телефон (логин)!\n";
+            //}
+            //if(string.IsNullOrEmpty(PasswordPb))
+            //{
+               // mes+=" Введите пароль!\n";
+            //}
+            //if(mes!="")
+            //{
+                //MessageBox.Show(mes);
+                //mes="";
+                //return
+            //}
+            //User user = App.context.User.FirstOrDefault(w => w.Phone == PhoneTb.Text && w.Password == PasswordPb.Password)
+                //if (user !=null)
+            //{
+                //App.enteredUser = user;
+                //ShopMainWindow shopMainWindow = new ShopMainWindow();
+                //shopMainWindow.Show();
+                //this.Close();
+            }
+
         }
 
        

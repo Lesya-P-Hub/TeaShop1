@@ -31,7 +31,7 @@
                        Height="20"
                        Width="400"
                        Foreground="White"/>
-            <PasswordBox Name="PasswordBox"
+            <PasswordBox Name="PasswordPb"
                      Height="40"
                      Width="400"/>
         </StackPanel>
