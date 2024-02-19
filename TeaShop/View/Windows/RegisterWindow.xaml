@@ -64,16 +64,26 @@
                      Height="40"
                      Width="400"/>
         </StackPanel>
-        <Button Name="RegistBtn"
+        <StackPanel Orientation="Horizontal"
+                    Grid.Row="8" HorizontalAlignment="Right" Margin="0,6,139,-6">
+            <Button Name="RegistBtn"
+                    Click="RegistBtn_Click"
                     Content="Зарегистрироваться"
                      Height="40"
-                     Width="200"
-                     Grid.Row="8"/>
+                     Width="200" Margin="0,0,10,0"/>
+            <Button 
+                    Name="BackBtn"
+                    Click="BackBtn_Click"
+                    Height="40"
+                    Width="200" Margin="20,0,0,0">
+                <Image Source="\Resources\Icons\BackIco.png" Margin="0,0,10,0"/>
+            </Button>
+        </StackPanel>
         <TextBlock Text="Согласие на обработку данных"
                    Foreground="White"
                    Grid.Row="8"/>
         <CheckBox Name="ChekCb"
-                  Grid.Row="8" Margin="271,24,-271,-24"/>
+                  Grid.Row="8" Margin="271,24,589,12"/>
         <Grid.RowDefinitions>
             <RowDefinition Height="1*" />
             <RowDefinition Height="1*" />

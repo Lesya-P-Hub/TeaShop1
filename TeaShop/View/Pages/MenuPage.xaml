@@ -11,31 +11,47 @@
 
     <Grid>
         <StackPanel Orientation="Vertical">
-            <Image Source="/Resources/Icons/mainIco.png"
+            <Button Name="MainBtn"
+                    Click="MainBtn_Click" Height="70"
+                    Background="#FF72A75B">
+                <Image Source="/Resources/Icons/mainIco.png"
                    Stretch="Fill"
                    Height="72"
                    Width="78"/>
+            </Button>
             <TextBlock Text="Главная" HorizontalAlignment="Center"/>
         </StackPanel>
         <StackPanel Orientation="Vertical"
                     Grid.Column="1">
-            <Image Source="/Resources/Icons/searchIco.png"
-                   Height="73"
+            <Button Name="SearchBtn"
+                    Click="SearchBtn_Click"
+                    Background="#FF72A75B">
+                <Image Source="/Resources/Icons/searchIco.png"
+                   Height="64"
                    Width="230"
                    RenderTransformOrigin="0.546,1.369"/>
+            </Button>
             <TextBlock Text="Поиск" HorizontalAlignment="Center"/>
         </StackPanel>
         <StackPanel Orientation="Vertical"
                     Grid.Column="2">
-            <Image Source="/Resources/Icons/korzinaIco.png"
+            <Button Name="KorzinaBtn"
+                    Click="KorzinaBtn_Click" Height="71"
+                    Background="#FF72A75B">
+                <Image Source="/Resources/Icons/korzinaIco.png"
                   Height="71"/>
+            </Button>
             <TextBlock Text="Корзина" HorizontalAlignment="Center"/>
         </StackPanel>
         <StackPanel Orientation="Vertical"
                     Grid.Column="3">
-            <Image Source="/Resources/Icons/profileIco.png"
-                   Height="73"
+            <Button Name="ProfileBtn"
+                    Click="ProfileBtn_Click"
+                    Background="#FF72A75B">
+                <Image Source="/Resources/Icons/profileIco.png"
+                   Height="64"
                    Width="226"/>
+            </Button>
             <TextBlock Text="Профиль" HorizontalAlignment="Center"/>
         </StackPanel>
         <Grid.ColumnDefinitions>

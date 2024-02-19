@@ -31,15 +31,26 @@
                        Height="20"
                        Width="400"
                        Foreground="White"/>
-            <PasswordBox Name="PasswordBox"
+            <PasswordBox Name="PasswordPb"
                      Height="40"
                      Width="400"/>
         </StackPanel>
-        <Button Grid.Row="5"
+        <StackPanel Orientation="Horizontal"
+                    Grid.Row="5" HorizontalAlignment="Center">
+            <Button 
                 Content="Войти"
                 Name="EnterBtn"
+                Click="EnterBtn_Click"
                 Height="40"
-                Width="200"/>
+                Width="200" Margin="0,0,10,0"/>
+            <Button 
+                    Name="BackBtn"
+                    Click="BackBtn_Click"
+                    Height="40"
+                    Width="200">
+                <Image Source="\Resources\Icons\BackIco.png" Margin="0,0,10,0"/>
+            </Button>
+        </StackPanel>
         <Grid.RowDefinitions>
             <RowDefinition Height="1*" />
             <RowDefinition Height="1*" />

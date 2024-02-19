@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using TeaShop.AppData;
 
 namespace TeaShop.View.Pages
 {
@@ -23,6 +24,26 @@ namespace TeaShop.View.Pages
         public MenuPage()
         {
             InitializeComponent();
+        }
+
+        private void MainBtn_Click(object sender, RoutedEventArgs e)
+        {
+            FrameClass.BodyFrame.Navigate(new View.Pages.MainBodyPage());
+        }
+
+        private void SearchBtn_Click(object sender, RoutedEventArgs e)
+        {
+            FrameClass.BodyFrame.Navigate(new View.Pages.SearchPage());
+        }
+
+        private void KorzinaBtn_Click(object sender, RoutedEventArgs e)
+        {
+            FrameClass.BodyFrame.Navigate(new View.Pages.KorzinaPage());
+        }
+
+        private void ProfileBtn_Click(object sender, RoutedEventArgs e)
+        {
+            FrameClass.BodyFrame.Navigate(new View.Pages.ProfilePage());
         }
     }
 }

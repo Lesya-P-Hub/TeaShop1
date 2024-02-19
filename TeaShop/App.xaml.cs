@@ -13,5 +13,6 @@ namespace TeaShop
     /// </summary>
     public partial class App : Application
     {
+        //public static User enteredUser;
     }
 }
