@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="42126122acca46c190ef8a14ea3969ac" Name="Diagram1" ZoomLevel="111">
+        <EntityTypeShape EntityType="VanshenDatabaseModel.Article" Width="1.5" PointX="0.75" PointY="10.5" IsExpanded="true" FillColor="192, 192, 255" />
+        <EntityTypeShape EntityType="VanshenDatabaseModel.BankCard" Width="1.5" PointX="3" PointY="7.5" IsExpanded="true" FillColor="192, 192, 255" />
+        <EntityTypeShape EntityType="VanshenDatabaseModel.Category" Width="1.5" PointX="1.5" PointY="14" IsExpanded="true" FillColor="192, 192, 255" />
+        <EntityTypeShape EntityType="VanshenDatabaseModel.Favorite" Width="1.5" PointX="5.25" PointY="3.75" IsExpanded="true" FillColor="192, 192, 255" />
+        <EntityTypeShape EntityType="VanshenDatabaseModel.Filter" Width="1.5" PointX="3" PointY="17" IsExpanded="true" FillColor="192, 192, 255" />
+        <EntityTypeShape EntityType="VanshenDatabaseModel.Product" Width="1.5" PointX="3" PointY="10.375" IsExpanded="true" FillColor="192, 192, 255" />
+        <EntityTypeShape EntityType="VanshenDatabaseModel.ProductFilter" Width="1.5" PointX="5.25" PointY="10.75" IsExpanded="true" FillColor="192, 192, 255" />
+        <EntityTypeShape EntityType="VanshenDatabaseModel.Status" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" FillColor="192, 192, 255" />
+        <EntityTypeShape EntityType="VanshenDatabaseModel.User" Width="1.5" PointX="3" PointY="3.125" IsExpanded="true" FillColor="192, 192, 255" />
+        <EntityTypeShape EntityType="VanshenDatabaseModel.UserCard" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" FillColor="192, 192, 255" />
+        <AssociationConnector Association="VanshenDatabaseModel.FK_Article_ToCategory" ManuallyRouted="false" />
+        <AssociationConnector Association="VanshenDatabaseModel.FK_Product_ToArticle" ManuallyRouted="false" />
+        <AssociationConnector Association="VanshenDatabaseModel.FK_UserCard_ToBankCard" ManuallyRouted="false" />
+        <AssociationConnector Association="VanshenDatabaseModel.FK_Favorite_ToProduct" ManuallyRouted="false" />
+        <AssociationConnector Association="VanshenDatabaseModel.FK_Favorite_ToUser" ManuallyRouted="false" />
+        <AssociationConnector Association="VanshenDatabaseModel.FK_ProductFilter_ToFilter" ManuallyRouted="false" />
+        <AssociationConnector Association="VanshenDatabaseModel.FK_ProductFilter_ToProduct" ManuallyRouted="false" />
+        <AssociationConnector Association="VanshenDatabaseModel.FK_User_ToStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="VanshenDatabaseModel.FK_UserCard_ToUser" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

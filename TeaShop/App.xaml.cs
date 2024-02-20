@@ -5,6 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
+using TeaShop.Model;
 
 namespace TeaShop
 {
@@ -13,6 +14,7 @@ namespace TeaShop
     /// </summary>
     public partial class App : Application
     {
-        //public static User enteredUser;
+        public static VanshenDatabaseEntities context = new VanshenDatabaseEntities();
+        public static User enteredUser;
     }
 }
