@@ -22,7 +22,8 @@
                        Foreground="White"/>
             <TextBox Name="NameTb"
                      Height="40"
-                     Width="400"/>
+                     Width="400"
+                     PreviewTextInput="NameTb_PreviewTextInput"/>
         </StackPanel>
         <StackPanel Grid.Row="3"
                     Orientation="Vertical">
@@ -32,7 +33,8 @@
                        Foreground="White"/>
             <TextBox Name="SurnameTb"
                      Height="40"
-                     Width="400"/>
+                     Width="400"
+                     PreviewTextInput="SurnameTb_PreviewTextInput"/>
         </StackPanel>
         <StackPanel Grid.Row="4"
                     Orientation="Vertical">
@@ -42,7 +44,8 @@
                        Foreground="White"/>
             <TextBox Name="PatronimycTb"
                      Height="40"
-                     Width="400"/>
+                     Width="400"
+                     PreviewTextInput="PatronimycTb_PreviewTextInput"/>
         </StackPanel>
         <StackPanel Grid.Row="5"
                     Orientation="Vertical">
@@ -52,7 +55,8 @@
                        Foreground="White"/>
             <TextBox Name="PhoneTb"
                      Height="40"
-                     Width="400"/>
+                     Width="400"
+                     PreviewTextInput="PhoneTb_PreviewTextInput"/>
         </StackPanel>
         <StackPanel Grid.Row="6"
                     Orientation="Vertical">

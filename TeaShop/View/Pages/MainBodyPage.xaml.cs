@@ -23,6 +23,8 @@ namespace TeaShop.View.Pages
         public MainBodyPage()
         {
             InitializeComponent();
+            ProductLb.ItemsSource = App.context.Product.ToList();
+            ArticleLb.ItemsSource = App.context.Article.ToList();
         }
     }
 }

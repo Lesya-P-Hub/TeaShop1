@@ -354,7 +354,7 @@
       <DependentUpon>VanshenDatabase.mdf</DependentUpon>
     </Content>
     <Resource Include="Resources\Products\shenpyerclassic.png" />
-    <Resource Include="Resources\Products\shy py erclassic.png" />
+    <Resource Include="Resources\Products\shypyerclassic.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

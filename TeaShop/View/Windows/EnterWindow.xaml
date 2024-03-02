@@ -23,7 +23,8 @@
                        Foreground="White"/>
             <TextBox Name="PnoheTb"
                      Height="40"
-                     Width="400"/>
+                     Width="400"
+                     PreviewTextInput="PnoheTb_PreviewTextInput"/>
         </StackPanel>
         <StackPanel Grid.Row="3"
                     Orientation="Vertical">

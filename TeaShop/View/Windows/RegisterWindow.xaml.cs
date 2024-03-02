@@ -46,7 +46,7 @@ namespace TeaShop.View.Window
             }
             if (ChekCb.IsChecked == false)
             {
-                mes += "Без согласия на обработку данных мы не можем допустить вас к использованию приложения\n";
+                mes += "Без согласия на обработку данных мы не можем допустить Вас к использованию приложения\n";
             }
             if (mes != "")
             {
@@ -77,6 +77,50 @@ namespace TeaShop.View.Window
             MainWindow mainWindow = new MainWindow();
             mainWindow.Show();
             this.Close();
+        }
+
+        private void PhoneTb_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            if (!char.IsNumber(e.Text.First()))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void NameTb_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            foreach (char c in e.Text)
+            {
+                if (!char.IsLetter(c) || c < 'А' || c > 'я')
+                {
+                    e.Handled = true; 
+                    return;
+                }
+            }
+        }
+
+        private void SurnameTb_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            foreach (char c in e.Text)
+            {
+                if (!char.IsLetter(c) || c < 'А' || c > 'я')
+                {
+                    e.Handled = true;
+                    return;
+                }
+            }
+        }
+
+        private void PatronimycTb_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            foreach (char c in e.Text)
+            {
+                if (!char.IsLetter(c) || c < 'А' || c > 'я')
+                {
+                    e.Handled = true;
+                    return;
+                }
+            }
         }
     }
 }

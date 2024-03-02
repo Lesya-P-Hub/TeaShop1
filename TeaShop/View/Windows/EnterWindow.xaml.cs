@@ -54,6 +54,12 @@ namespace TeaShop.View.Windows
                 this.Close();
             }
 
+            else
+            {
+                MessageBox.Show("Такой пользователь не найден");
+                return;
+            }
+
 
         }
 
@@ -62,6 +68,14 @@ namespace TeaShop.View.Windows
             MainWindow mainWindow = new MainWindow();
             mainWindow.Show();
             this.Close();
+        }
+
+        private void PnoheTb_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            if (!char.IsNumber(e.Text.First()))
+            {
+                e.Handled = true;
+            }
         }
     }
 }
